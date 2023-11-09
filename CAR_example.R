@@ -1,3 +1,42 @@
+# Modifications to existing functions from:
+# ------------------------------------------------
+# The 'Minirand' R package version 0.1.3, originally developed by Man Jin, Adam Polis, 
+# and Jonathan Hartzel, was used as a starting point for further development. 
+# Original source code can be found at: https://github.com/cran/Minirand
+# This software is distributed under the MIT License.
+#
+# Changes implemented in this version:
+# - Implemented probability allocation methods as described by Pocock, S. J., & Simon, R. 
+#   in their paper "Sequential treatment assignment with balancing for prognostic factors 
+#   in the controlled clinical trial".
+# - Modifications to the original 'Minirand' code to accommodate scenarios 
+#   with a single factor randomization, enhancing its applicability to a broader 
+#   range of clinical trial designs.
+#
+# Hierarchical Dynamic Balancing Randomization:
+# ------------------------------------------------
+# The 'Hierarchical Dynamic Balancing' randomization algorithm implemented in our code
+# is inspired by the design developed in the paper by Heritier, S., Gebski, V., & Pillai, A.,
+# titled 'Dynamic balancing randomization in controlled clinical trials'.
+# 
+# We have also developed 'Complete Randomization', 'Stratified Permuted Block 
+# Randomization', and 'Stratified Big Stick Design' for comparison.
+#
+# The foundational work by the aforementioned authors is acknowledged as a significant contribution
+# to the field. Our code represents an academic endeavor to operationalize their proposed designs
+# into practical, executable algorithms, while also introducing novel adaptations.
+#
+# References:
+# Pocock, S. J., & Simon, R. (1975). SEQUENTIAL TREATMENT ASSIGNMENT WITH BALANCING FOR 
+# PROGNOSTIC FACTORS IN THE CONTROLLED CLINICAL TRIAL. Biometrics, 31, 103-115.
+# Heritier, S., Gebski, V., & Pillai, A. (2005). Dynamic balancing randomization in controlled clinical trials.
+# Statistics in Medicine, 24, 3729–3741. DOI: 10.1002/sim.2421.
+#
+# Note on Licensing:
+# Users are responsible for adhering to licensing agreements and use policies of the 'Minirand' 
+# package and the publications by Pocock & Simon, as well as Heritier et al. when applying 
+# these modified functions in research.
+
 library(MASS)
 library(pwr)
 library(dplyr)
