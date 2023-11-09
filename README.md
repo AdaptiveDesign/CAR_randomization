@@ -5,7 +5,7 @@ This repository hosts the R code developed for the paper "Comparison of Pocock a
 
 ## Randomization Strategies Included
 - Pocock & Simon's Minimization
-- Hierarchical Dynamic Balancing
+- Hierarchical Dynamic Balancing Randomization
 - Complete Randomization
 - Stratified Permuted Block Randomization
 - Stratified Big Stick Design
